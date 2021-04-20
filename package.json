@@ -6,6 +6,8 @@
 	"author": "",
 	"license": "ISC",
 	"scripts": {
+		"dev": "webpack-cli serve",
+		"build": "webpack",
 		"type:check": "tsc",
 		"lint:ts": "eslint './src/**/*.{ts,tsx}'",
 		"lint:css": "stylelint './src/**/*.styles.ts'",

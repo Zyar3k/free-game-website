@@ -3,14 +3,25 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"author": "",
+	"license": "ISC",
 	"scripts": {
 		"type:check": "tsc",
 		"lint:ts": "eslint './src/**/*.{ts,tsx}'",
 		"lint:css": "stylelint './src/**/*.styles.ts'",
 		"lint": "npm run lint:ts && npm run lint:css"
 	},
-	"author": "",
-	"license": "ISC",
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{tsx,ts}": [
+			"prettier --write",
+			"npm run lint"
+		]
+	},
 	"dependencies": {
 		"@babel/polyfill": "^7.12.1",
 		"react": "^17.0.2",

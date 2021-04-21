@@ -2,7 +2,7 @@ import React, { ReactElement, useState, useEffect } from 'react'
 import axios from 'axios'
 import { Game } from 'types'
 import GameListRender from './GameList.render'
-import { API_HOST, API_KEY } from './constants'
+import { API_HOST, API_KEY } from '../../constants'
 
 const GameList = (): ReactElement => {
 	const [games, setGames] = useState<Game[]>([])

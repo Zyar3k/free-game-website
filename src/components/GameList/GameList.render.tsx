@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react'
 import { Game } from 'types'
 
+import GameCard from 'components/GameCard'
+
 interface Props {
 	err?: string
 	games: Game[]

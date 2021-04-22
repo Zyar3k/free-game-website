@@ -24,12 +24,12 @@ const GameCard = ({ content }: Props): ReactElement => {
 		switch (p.trim()) {
 			case BROWSER:
 				icon = (
-					<img key={`${id}-browser`} src={browserIcon} alt="browser icon" />
+					<Icon key={`${id}-browser`} src={browserIcon} alt="browser icon" />
 				)
 				break
 			case WINDOWS:
 				icon = (
-					<img key={`${id}-windows`} src={windowsIcon} alt="windows icon" />
+					<Icon key={`${id}-windows`} src={windowsIcon} alt="windows icon" />
 				)
 				break
 			default:
